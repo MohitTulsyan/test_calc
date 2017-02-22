@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<stdlib.h>
 int main(int argc, char const *argv[])
 {
 	int s,a,b,c=0;
@@ -9,8 +9,9 @@ int main(int argc, char const *argv[])
 	printf("3. Multiply\n");
 	printf("4. Divide\n");
 	printf("Anything Else to Exit\n");
-	scanf("%d\n",&s);
-	scanf("Enter the two numbers\n%d %d\n",&a,&b);
+	scanf("%d",&s);
+	printf("\nEnter the two numbers\n");
+	scanf("%d %d",&a, &b);
 	switch(s)
 		{
 			case 1:
@@ -30,3 +31,4 @@ int main(int argc, char const *argv[])
 		}
 	printf("The output is %d\n",c);
 	return 0;
+}
